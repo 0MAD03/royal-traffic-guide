@@ -1,0 +1,427 @@
+:root {
+  color-scheme: light;
+  --ink: #25231e;
+  --muted: #686154;
+  --paper: #f7f3e8;
+  --paper-deep: #efe6d2;
+  --line: #d7c7aa;
+  --red: #9b2f2f;
+  --green: #2f6f5e;
+  --blue: #315f83;
+  --gold: #b58b3b;
+  --shadow: 0 24px 60px rgba(45, 37, 24, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, system-ui, sans-serif;
+  line-height: 1.75;
+  color: var(--ink);
+  background:
+    linear-gradient(90deg, rgba(49, 95, 131, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(155, 47, 47, 0.04) 1px, transparent 1px),
+    var(--paper);
+  background-size: 42px 42px;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  min-height: 100vh;
+  background:
+    linear-gradient(120deg, rgba(37, 35, 30, 0.88), rgba(49, 95, 131, 0.8)),
+    radial-gradient(circle at 78% 20%, rgba(181, 139, 59, 0.5), transparent 32%),
+    #25231e;
+  color: #fff9ec;
+}
+
+.topbar {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.brand,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border: 2px solid rgba(255, 249, 236, 0.86);
+  display: grid;
+  place-items: center;
+  font-family: Georgia, serif;
+  border-radius: 50%;
+}
+
+.nav-links a {
+  color: rgba(255, 249, 236, 0.86);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.hero {
+  width: min(1180px, calc(100% - 32px));
+  min-height: calc(100vh - 72px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(330px, 0.95fr);
+  gap: 52px;
+  align-items: center;
+  padding: 40px 0 86px;
+}
+
+.kicker,
+.section-label {
+  margin: 0 0 10px;
+  color: var(--gold);
+  font-weight: 800;
+  letter-spacing: 0;
+  font-size: 0.86rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(3.1rem, 9vw, 6.8rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.lead {
+  max-width: 720px;
+  margin: 28px 0 0;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: rgba(255, 249, 236, 0.9);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.button {
+  min-height: 46px;
+  padding: 10px 18px;
+  border: 1px solid rgba(255, 249, 236, 0.72);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.button.primary {
+  background: #fff9ec;
+  color: var(--ink);
+}
+
+.button.secondary {
+  color: #fff9ec;
+}
+
+.hero-plate {
+  margin: 0;
+  background: rgba(255, 249, 236, 0.96);
+  color: var(--ink);
+  border: 1px solid rgba(255, 249, 236, 0.3);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.hero-plate img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.hero-plate figcaption {
+  padding: 12px 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.notice-band {
+  background: var(--red);
+  color: #fff9ec;
+  padding: 16px;
+  text-align: center;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 700;
+}
+
+.notice-band p {
+  margin: 0;
+}
+
+.section,
+.feature-band {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 82px 0;
+}
+
+.intro,
+.search-panel,
+.two-column {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
+  align-items: start;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.18;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+}
+
+.section p,
+.feature-band p {
+  margin-top: 0;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 28px;
+}
+
+.search-box {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.search-box input {
+  width: 100%;
+  min-height: 52px;
+  border: 1px solid var(--line);
+  background: #fffdf7;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font: inherit;
+  color: var(--ink);
+}
+
+.law-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.law-card,
+.quiz-card,
+.rule-list article {
+  background: rgba(255, 253, 247, 0.92);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 10px 28px rgba(45, 37, 24, 0.08);
+}
+
+.article-number {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--red);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-weight: 800;
+}
+
+.law-card p,
+.rule-list p,
+.quiz-card p {
+  margin: 0;
+}
+
+.empty-state {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px dashed var(--line);
+  background: rgba(255, 253, 247, 0.65);
+}
+
+.feature-band {
+  width: 100%;
+  padding-inline: max(16px, calc((100% - 1180px) / 2));
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
+  background: linear-gradient(135deg, #edf4f1, #f8f2df);
+  border-block: 1px solid var(--line);
+}
+
+.feature-copy {
+  max-width: 520px;
+}
+
+.rule-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.permit-table {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fffdf7;
+}
+
+.permit-table [role="row"] {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+}
+
+.permit-table span {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.permit-table [role="row"]:first-child {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 800;
+}
+
+.permit-table [role="row"]:last-child span {
+  border-bottom: 0;
+}
+
+.quiz-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.quiz-card {
+  display: grid;
+  gap: 18px;
+}
+
+.quiz-card div {
+  display: flex;
+  gap: 10px;
+}
+
+.quiz-card button {
+  width: 48px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fffdf7;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.quiz-card button:hover,
+.quiz-card button:focus-visible {
+  border-color: var(--blue);
+  outline: 3px solid rgba(49, 95, 131, 0.18);
+}
+
+.quiz-card strong {
+  min-height: 28px;
+  color: var(--green);
+}
+
+.quiz-card.incorrect strong {
+  color: var(--red);
+}
+
+.site-footer {
+  background: var(--ink);
+  color: rgba(255, 249, 236, 0.86);
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 4px 0;
+}
+
+@media (max-width: 900px) {
+  .topbar,
+  .hero,
+  .intro,
+  .search-panel,
+  .feature-band,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    min-height: 0;
+    padding-top: 36px;
+  }
+
+  .law-grid,
+  .rule-list,
+  .quiz-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .section,
+  .feature-band {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .permit-table [role="row"] {
+    grid-template-columns: 1fr;
+  }
+
+  .permit-table span {
+    border-bottom: 1px solid var(--line);
+  }
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="オマドリア王国交通省監修。多種族と魔法が共存する王国の道路交通教本。">
+    <title>オマドリア王国 道路交通教本</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar" aria-label="主要ナビゲーション">
+        <a class="brand" href="#top" aria-label="教本の先頭へ">
+          <span class="brand-mark" aria-hidden="true">O</span>
+          <span>オマドリア王国交通省</span>
+        </a>
+        <div class="nav-links">
+          <a href="#principles">基本原則</a>
+          <a href="#species">種族特例</a>
+          <a href="#magic">魔法制限</a>
+          <a href="#quiz">確認問題</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero">
+        <div class="hero-copy">
+          <p class="kicker">王国免許取得者講習用 公式教材</p>
+          <h1>オマドリア王国<br>道路交通教本</h1>
+          <p class="lead">
+            魔導車、馬車、騎獣、飛竜、箒、ゴーレム運搬車が同じ道を使う時代のための交通規範。
+            法律を読むことで、王国の日常と秩序を知る。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button primary" href="#principles">教本を読む</a>
+            <a class="button secondary" href="#search">条文を調べる</a>
+          </div>
+        </div>
+        <figure class="hero-plate">
+          <img src="assets/omadria-road-plate.png" alt="王都から森、鉱山、飛竜航路へ伸びるオマドリア王国の道路図">
+          <figcaption>王都環状道および主要街道概略図</figcaption>
+        </figure>
+      </section>
+    </header>
+
+    <main>
+      <section class="notice-band" aria-label="教本の基本理念">
+        <p>道路交通法の目的は、交通の安全と円滑を図り、公共の福祉に寄与することである。</p>
+      </section>
+
+      <section class="section intro" id="about">
+        <div>
+          <p class="section-label">教材概要</p>
+          <h2>免許とは、王国社会への参加許可である。</h2>
+        </div>
+        <p>
+          オマドリア王国では、種族、魔法、魔物、召喚契約、飛行交通が日常の交通に深く関係する。
+          本教本は単なる暗記資料ではなく、運転者が王国の多様な生活者を予見し、保護し、円滑な通行を成立させるための基礎文書である。
+        </p>
+      </section>
+
+      <section class="section search-panel" id="search">
+        <div>
+          <p class="section-label">条文検索</p>
+          <h2>調べながら読む</h2>
+        </div>
+        <label class="search-box">
+          <span>語句を入力</span>
+          <input id="ruleSearch" type="search" placeholder="例: 召喚獣、スライム、飛竜、アンデッド">
+        </label>
+      </section>
+
+      <section class="section" id="principles">
+        <div class="section-heading">
+          <p class="section-label">第一編 総則</p>
+          <h2>道路交通法 基本原則</h2>
+          <p>初版では、教本と問題作成の核になる十五条を収録する。</p>
+        </div>
+        <div class="law-grid" id="lawGrid">
+          <article class="law-card" data-keywords="目的 安全 円滑 公共">
+            <span class="article-number">第一条</span>
+            <h3>目的</h3>
+            <p>この法律は、道路における危険を防止し、交通の安全と円滑を図り、もって公共の福祉に寄与することを目的とする。</p>
+          </article>
+          <article class="law-card" data-keywords="道路 街道 橋 空路 地下">
+            <span class="article-number">第二条</span>
+            <h3>道路の定義</h3>
+            <p>道路とは、王国、領邦、自治都市または村落が公衆の通行に供する地上路、橋梁、地下道、港湾接続路および低空指定航路をいう。</p>
+          </article>
+          <article class="law-card" data-keywords="車両 魔導車 馬車 箒 騎獣">
+            <span class="article-number">第三条</span>
+            <h3>車両等</h3>
+            <p>車両等とは、魔導車、馬車、荷車、騎獣、箒、飛行具、ゴーレム運搬車その他道路を移動する用具または生物をいう。</p>
+          </article>
+          <article class="law-card" data-keywords="運転者 召喚者 管理者 責任">
+            <span class="article-number">第四条</span>
+            <h3>運転者の責任</h3>
+            <p>運転者は、自己の操作、指揮、召喚または命令により移動する車両等の安全について責任を負う。召喚獣による牽引は召喚者の責任とする。</p>
+          </article>
+          <article class="law-card" data-keywords="免許 魔導車 飛竜 特別">
+            <span class="article-number">第五条</span>
+            <h3>免許区分</h3>
+            <p>魔導車、飛竜、重量ゴーレム運搬車および旅客用大型馬車の運転には、普通免許のほか王令で定める特別免許を要する。</p>
+          </article>
+          <article class="law-card" data-keywords="登録 紋章 鑑札 車両">
+            <span class="article-number">第六条</span>
+            <h3>車両登録</h3>
+            <p>魔導機関を備える車両および公道を反復して通行する使役魔物は、交通省登録局の鑑札または紋章標識を掲げなければならない。</p>
+          </article>
+          <article class="law-card" data-keywords="優先 救急 治癒 騎士団">
+            <span class="article-number">第七条</span>
+            <h3>緊急車両の優先</h3>
+            <p>救急治癒車、消防水精車、王国騎士団の緊急車両および災害召喚隊は、警音、発光または公認念話標識により優先通行することができる。</p>
+          </article>
+          <article class="law-card" data-keywords="魔法 詠唱 浮遊 幻惑">
+            <span class="article-number">第八条</span>
+            <h3>道路上の魔法使用</h3>
+            <p>運転中の詠唱、幻惑魔法、視界を遮る発光魔法および進路を変化させる浮遊魔法は、交通上やむを得ない場合を除き禁止する。</p>
+          </article>
+          <article class="law-card" data-keywords="種族 反応速度 視界 特例">
+            <span class="article-number">第九条</span>
+            <h3>種族特性への配慮</h3>
+            <p>運転者は、種族による身長、視界、聴覚、歩行速度、日照耐性および夜間活動性の差異を予見し、安全な間隔を保持しなければならない。</p>
+          </article>
+          <article class="law-card" data-keywords="アンデッド 死亡 事故">
+            <span class="article-number">第十条</span>
+            <h3>死傷事故の扱い</h3>
+            <p>交通事故により生命活動が停止した場合は死亡事故とする。ただし、登録済みアンデッドは死亡事故には該当せず、損壊事故として扱う。</p>
+          </article>
+          <article class="law-card" data-keywords="魔物 野生 家畜 保護">
+            <span class="article-number">第十一条</span>
+            <h3>魔物との接触</h3>
+            <p>野生魔物との接触時は危険回避を優先し、家畜または使役魔物との接触時は所有者確認を行う。保護対象魔物は王国自然庁へ通報すること。</p>
+          </article>
+          <article class="law-card" data-keywords="スライム 積荷 調理">
+            <span class="article-number">第十二条</span>
+            <h3>流動体積荷</h3>
+            <p>スライムその他流動体の積荷は密閉容器で運搬し、漏出した場合は直ちに道路管理者へ届け出る。ただし調理済みのスライムはこの限りではない。</p>
+          </article>
+          <article class="law-card" data-keywords="飛行 低空 飛竜 箒">
+            <span class="article-number">第十三条</span>
+            <h3>飛行交通</h3>
+            <p>市街地における低空飛行は指定航路に限る。飛竜および箒は、地上信号と空路信号の双方に従わなければならない。</p>
+          </article>
+          <article class="law-card" data-keywords="整備 魔導核 制動 灯火">
+            <span class="article-number">第十四条</span>
+            <h3>整備義務</h3>
+            <p>魔導車の所有者は、制動装置、灯火、魔導核、魔力漏出防止器および逆召喚停止具を定期に点検しなければならない。</p>
+          </article>
+          <article class="law-card" data-keywords="標識 信号 予兆 念話">
+            <span class="article-number">第十五条</span>
+            <h3>標識および信号</h3>
+            <p>道路標識、信号灯、浮遊標識、地響き予兆標および公認念話標識は、同一の効力を有する。相互に矛盾する場合は交通監督官の指示に従う。</p>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>該当する条文は見つかりませんでした。</p>
+      </section>
+
+      <section class="feature-band" id="species">
+        <div class="feature-copy">
+          <p class="section-label">第二編 通行者</p>
+          <h2>多種族のための安全確認</h2>
+          <p>
+            同じ横断歩道を、低身長のドワーフ、日光を避けるアンデッド、急停止しにくいゴーレム、羽音の小さい妖精が利用する。
+            王国の運転者は、相手が自分と同じ速度、同じ視野、同じ反応を持つと仮定してはならない。
+          </p>
+        </div>
+        <div class="rule-list" aria-label="種族ごとの注意事項">
+          <article>
+            <h3>妖精</h3>
+            <p>夜間は灯火へ接近する習性があるため、発光魔法の使用時は飛行横断に注意する。</p>
+          </article>
+          <article>
+            <h3>ゴーレム</h3>
+            <p>停止命令から完全停止までに時間を要する。大型個体には十分な側方間隔を置く。</p>
+          </article>
+          <article>
+            <h3>アンデッド</h3>
+            <p>日中は遮光外套により視野が狭い場合がある。損壊事故時は登録札を確認する。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-column" id="magic">
+        <div>
+          <p class="section-label">第三編 魔法と車両</p>
+          <h2>便利な術ほど、道路では危険になる。</h2>
+          <p>
+            魔法は王国の生活基盤である。しかし、進路変更、幻惑、急な浮遊、召喚門の開放は、一般道路では重大事故の原因となる。
+            運転者は魔力より先に合図を用い、術式より先に停止距離を確保する。
+          </p>
+        </div>
+        <div class="permit-table" role="table" aria-label="道路上の魔法使用区分">
+          <div role="row">
+            <span role="columnheader">区分</span>
+            <span role="columnheader">扱い</span>
+          </div>
+          <div role="row">
+            <span role="cell">照明魔法</span>
+            <span role="cell">眩惑を生じない範囲で可</span>
+          </div>
+          <div role="row">
+            <span role="cell">通信魔法</span>
+            <span role="cell">手放し運転を伴わない場合に限る</span>
+          </div>
+          <div role="row">
+            <span role="cell">召喚魔法</span>
+            <span role="cell">停車後、指定区画でのみ可</span>
+          </div>
+          <div role="row">
+            <span role="cell">幻惑魔法</span>
+            <span role="cell">運転中は禁止</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quiz" id="quiz">
+        <div class="section-heading">
+          <p class="section-label">修了前確認</p>
+          <h2>○×確認問題</h2>
+          <p>教本を読み返しながら解答すること。結果は端末内に保存されない。</p>
+        </div>
+        <div class="quiz-list">
+          <article class="quiz-card" data-answer="false">
+            <p>登録済みアンデッドが事故で損壊した場合、常に死亡事故として扱う。</p>
+            <div>
+              <button type="button" data-choice="true">○</button>
+              <button type="button" data-choice="false">×</button>
+            </div>
+            <strong aria-live="polite"></strong>
+          </article>
+          <article class="quiz-card" data-answer="true">
+            <p>召喚獣が車両を牽引している場合、その安全責任は召喚者にある。</p>
+            <div>
+              <button type="button" data-choice="true">○</button>
+              <button type="button" data-choice="false">×</button>
+            </div>
+            <strong aria-live="polite"></strong>
+          </article>
+          <article class="quiz-card" data-answer="false">
+            <p>市街地であれば、飛竜は地上信号だけに従えばよい。</p>
+            <div>
+              <button type="button" data-choice="true">○</button>
+              <button type="button" data-choice="false">×</button>
+            </div>
+            <strong aria-live="polite"></strong>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>王国歴 327年版 / オマドリア王国交通省監修</p>
+      <p>本教材は免許学科試験、交通監督官講習および召喚者責任講習の基礎資料として使用できる。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
