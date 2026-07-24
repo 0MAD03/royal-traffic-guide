@@ -19,16 +19,3 @@ searchInput?.addEventListener("input", () => {
 
   emptyState.hidden = visibleCount !== 0;
 });
-
-document.querySelectorAll(".quiz-card").forEach((card) => {
-  const result = card.querySelector("strong");
-  const answer = card.dataset.answer;
-
-  card.querySelectorAll("button").forEach((button) => {
-    button.addEventListener("click", () => {
-      const isCorrect = button.dataset.choice === answer;
-      card.classList.toggle("incorrect", !isCorrect);
-      result.textContent = isCorrect ? "正解。教本の規定と一致します。" : "不正解。該当条文を確認してください。";
-    });
-  });
-});
