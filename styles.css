@@ -353,14 +353,19 @@ p {
 
 .article-number {
   display: inline-block;
-  margin-bottom: 8px;
+  margin: 0 10px 10px 0;
   color: var(--red);
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-weight: 800;
 }
 
-.article-points {
+.article-number + h3 {
+  display: inline;
   margin: 0;
+}
+
+.article-points {
+  margin: 10px 0 0;
   padding-left: 1.35em;
 }
 
