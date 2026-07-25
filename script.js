@@ -3,7 +3,7 @@ const lawCards = Array.from(document.querySelectorAll(".law-card"));
 const emptyState = document.querySelector("#emptyState");
 
 function normalize(value) {
-  return value.trim().toLowerCase();
+  return value.normalize("NFKC").trim().toLowerCase();
 }
 
 searchInput?.addEventListener("input", () => {
@@ -11,7 +11,7 @@ searchInput?.addEventListener("input", () => {
   let visibleCount = 0;
 
   lawCards.forEach((card) => {
-    const haystack = normalize(`${card.textContent} ${card.dataset.keywords || ""}`);
+    const haystack = normalize(card.textContent || "");
     const isVisible = term === "" || haystack.includes(term);
     card.hidden = !isVisible;
     if (isVisible) visibleCount += 1;
