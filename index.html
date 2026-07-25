@@ -5,37 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="オマドリア王国交通省公開資料。多種族と魔法が共存する王国の運転免許制度に関する基礎資料。">
     <title>オマドリア王国 運転免許制度に関する基礎資料</title>
-    <link rel="stylesheet" href="styles.css?v=20260725-search-filter2">
+    <script>
+      window.assetQuery = location.hostname === "localhost" || location.hostname === "127.0.0.1"
+        ? `?v=${Date.now()}`
+        : "";
+      document.write(`<link rel="stylesheet" href="styles.css${window.assetQuery}">`);
+    </script>
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
   </head>
   <body>
-    <header class="site-header" id="top">
-      <div class="gov-strip">
-        <span>オマドリア王国公式ウェブサイト</span>
-        <span>交通省 / 道路交通局 / 免許制度課</span>
-      </div>
-      <nav class="topbar" aria-label="主要ナビゲーション">
-        <a class="brand" href="#top">
-          <span class="brand-mark" aria-hidden="true">O</span>
-          <span>オマドリア王国交通省</span>
-        </a>
-        <div class="nav-links">
+    <div class="fixed-header" aria-label="固定ヘッダ">
+      <div class="fixed-header-inner">
+        <a class="fixed-brand" href="#top">オマドリア王国交通省</a>
+        <nav class="fixed-nav" aria-label="固定ナビゲーション">
           <a href="#toc">目次</a>
-          <a href="#chapter-road">道路</a>
-          <a href="#chapter-vehicle">車両</a>
-          <a href="#chapter-license">免許</a>
-          <a href="#chapter-signal">信号</a>
-          <a href="#chapter-sign">標識</a>
-          <a href="#chapter-monster">魔物</a>
-          <a href="#chapter-accident">事故</a>
-          <a href="#chapter-maintenance">整備</a>
-          <a href="#monster-tattaratan">タッタラタン</a>
-        </div>
-      </nav>
+          <a href="#chapter-purpose">本文</a>
+          <a href="#monster-part">魔物</a>
+        </nav>
+        <label class="fixed-search">
+          <span>条文検索</span>
+          <input id="fixedRuleSearch" data-rule-search type="search" placeholder="語句を入力">
+        </label>
+      </div>
+    </div>
 
-      <section class="hero">
+    <main>
+      <section class="hero document-hero" id="top">
         <p class="breadcrumb">ホーム &gt; 交通省 &gt; 運転免許 &gt; 制度資料</p>
         <p class="kicker">交通省道路交通局 公開資料</p>
-        <h1>オマドリア王国<br>運転免許制度に関する基礎資料</h1>
+        <h1>オマドリア王国<br>運転免許制度に関する<br>基礎資料</h1>
         <p class="lead">
           本資料は、魔導車、馬車、騎獣、飛竜、箒、ゴーレム運搬車その他の交通主体が同一の道路を利用するための基本規範を示すものである。
           運転者は、条文を暗記するだけでなく、その背後にある王国社会の慣習、種族差、魔法利用、召喚契約上の責任を理解しなければならない。
@@ -58,12 +56,6 @@
           <a class="button primary" href="#chapter-purpose">本文を読む</a>
           <a class="button secondary" href="#search">条文を検索する</a>
         </div>
-      </section>
-    </header>
-
-    <main>
-      <section class="notice-band" aria-label="資料の基本理念">
-        <p>道路交通法の目的は、交通の安全と円滑を図り、公共の福祉に寄与することである。</p>
       </section>
 
       <section class="section toc-panel" id="toc" aria-label="ページ内目次">
@@ -94,7 +86,7 @@
         <h2>調べながら読む</h2>
         <label class="search-box">
           <span>語句を入力</span>
-          <input id="ruleSearch" type="search" placeholder="例: 信号、標識、召喚獣、スライム、飛竜、アンデッド">
+          <input id="ruleSearch" data-rule-search type="search" placeholder="例: 信号、標識、召喚獣、スライム、飛竜、アンデッド">
         </label>
       </section>
 
@@ -102,7 +94,7 @@
         <div class="section-heading">
           <p class="section-label">道路交通法 基本原則</p>
           <h2>第一編 基本通則</h2>
-          <p>本公開版では、運転免許制度を理解するための基礎となる十六条を、探しやすい主題別の章に分けて収録する。</p>
+          <p>運転免許制度を理解するための基礎をここに収録する。</p>
         </div>
 
         <section class="chapter" id="chapter-purpose">
@@ -291,16 +283,6 @@
               <li>野生魔物との接触時は危険回避を優先し、家畜または使役魔物との接触時は所有者確認を行う。保護対象魔物は王国自然庁へ通報すること。</li>
               <li>運転者は、負傷した魔物に不用意に接近してはならない。毒、麻痺、火炎、擬態その他の危険がある場合は、道路管理者または魔物取扱資格者の到着を待つ。</li>
               <li>保護対象魔物を避けるために急停止した場合であっても、後続車両への合図、二次事故防止、監督官への報告を怠ってはならない。</li>
-            </ul>
-          </article>
-
-          <article class="law-card">
-            <span class="article-number">第13条</span>
-            <h3>流動体積荷</h3>
-            <ul class="article-points">
-              <li>スライムその他流動体の積荷は密閉容器で運搬し、漏出した場合は直ちに道路管理者へ届け出る。ただし調理済みのスライムはこの限りではない。</li>
-              <li>生体スライムを運搬するときは、容器に換気孔、逃走防止封印、所有者標識を備えること。酸性個体は危険積荷として扱う。</li>
-              <li>漏出したスライムを素手で回収してはならない。運転者は、後続交通を誘導し、溶解または分裂の有無を確認できる者へ処理を引き継ぐ。</li>
             </ul>
           </article>
         </section>
@@ -627,6 +609,8 @@
       <p>本資料は運転免許制度、交通監督官事務および召喚者責任制度の基礎情報として公開する。</p>
     </footer>
 
-    <script src="script.js?v=20260725-search-filter2"></script>
+    <script>
+      document.write(`<script src="script.js${window.assetQuery}"><\/script>`);
+    </script>
   </body>
 </html>

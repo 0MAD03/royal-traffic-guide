@@ -1,8 +1,9 @@
+const searchInputs = Array.from(document.querySelectorAll("[data-rule-search]"));
 const searchInput = document.querySelector("#ruleSearch");
 const lawCards = Array.from(document.querySelectorAll(".law-card"));
 const chapters = Array.from(document.querySelectorAll(".chapter"));
 const sectionHeadings = Array.from(document.querySelectorAll("#principles > .section-heading"));
-const navigationLinks = Array.from(document.querySelectorAll(".nav-links a, .toc-links a"));
+const navigationLinks = Array.from(document.querySelectorAll(".toc-links a, .fixed-nav a"));
 const emptyState = document.querySelector("#emptyState");
 
 function normalize(value) {
@@ -14,8 +15,16 @@ function setFilteredOut(element, shouldHide) {
   element.classList.toggle("search-hidden", shouldHide);
 }
 
-function applySearchFilter() {
-  const term = normalize(searchInput.value);
+function syncSearchInputs(value, sourceInput) {
+  searchInputs.forEach((input) => {
+    if (input !== sourceInput) {
+      input.value = value;
+    }
+  });
+}
+
+function applySearchFilter(value) {
+  const term = normalize(value);
   const isSearching = term !== "";
   let visibleCount = 0;
 
@@ -56,4 +65,9 @@ function applySearchFilter() {
   emptyState.hidden = visibleCount !== 0;
 }
 
-searchInput?.addEventListener("input", applySearchFilter);
+searchInputs.forEach((input) => {
+  input.addEventListener("input", () => {
+    syncSearchInputs(input.value, input);
+    applySearchFilter(input.value);
+  });
+});
