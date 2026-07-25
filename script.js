@@ -1,3 +1,24 @@
+class LawCardElement extends HTMLElement {
+  connectedCallback() {
+    if (this.dataset.rendered === "true") return;
+
+    const number = this.getAttribute("number") || "";
+    const title = this.getAttribute("title") || "";
+    const points = this.innerHTML.trim();
+
+    this.dataset.rendered = "true";
+    this.innerHTML = `
+      <span class="article-number">${number}</span>
+      <h3>${title}</h3>
+      <ul class="article-points">
+        ${points}
+      </ul>
+    `;
+  }
+}
+
+customElements.define("law-card", LawCardElement);
+
 const searchInputs = Array.from(document.querySelectorAll("[data-rule-search]"));
 const searchInput = document.querySelector("#ruleSearch");
 const lawCards = Array.from(document.querySelectorAll(".law-card"));

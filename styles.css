@@ -339,6 +339,7 @@ p {
 }
 
 .law-card {
+  display: block;
   padding: 24px 28px;
   border-top: 1px solid var(--line);
 }
