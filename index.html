@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="オマドリア王国交通省監修。多種族と魔法が共存する王国の道路交通教本。">
-    <title>オマドリア王国 道路交通教本</title>
+    <meta name="description" content="オマドリア王国交通省公開資料。多種族と魔法が共存する王国の運転免許制度に関する基礎資料。">
+    <title>オマドリア王国 運転免許制度に関する基礎資料</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header" id="top">
       <div class="gov-strip">
         <span>オマドリア王国公式ウェブサイト</span>
-        <span>交通省 / 道路交通局 / 免許教本室</span>
+        <span>交通省 / 道路交通局 / 免許制度課</span>
       </div>
       <nav class="topbar" aria-label="主要ナビゲーション">
         <a class="brand" href="#top">
@@ -19,26 +19,31 @@
           <span>オマドリア王国交通省</span>
         </a>
         <div class="nav-links">
-          <a href="#chapter-1">第1章</a>
-          <a href="#chapter-2">第2章</a>
-          <a href="#chapter-3">第3章</a>
-          <a href="#chapter-4">第4章</a>
-          <a href="#chapter-5">第5章</a>
+          <a href="#toc">目次</a>
+          <a href="#chapter-road">道路</a>
+          <a href="#chapter-vehicle">車両</a>
+          <a href="#chapter-license">免許</a>
+          <a href="#chapter-signal">信号</a>
+          <a href="#chapter-sign">標識</a>
+          <a href="#chapter-monster">魔物</a>
+          <a href="#chapter-accident">事故</a>
+          <a href="#chapter-maintenance">整備</a>
+          <a href="#monster-tattaratan">タッタラタン</a>
         </div>
       </nav>
 
       <section class="hero">
-        <p class="breadcrumb">ホーム &gt; 交通省 &gt; 運転免許 &gt; 学科教本</p>
-        <p class="kicker">王国免許取得者講習用 公式教材</p>
-        <h1>オマドリア王国<br>道路交通教本</h1>
+        <p class="breadcrumb">ホーム &gt; 交通省 &gt; 運転免許 &gt; 制度資料</p>
+        <p class="kicker">交通省道路交通局 公開資料</p>
+        <h1>オマドリア王国<br>運転免許制度に関する基礎資料</h1>
         <p class="lead">
-          本教本は、魔導車、馬車、騎獣、飛竜、箒、ゴーレム運搬車その他の交通主体が同一の道路を利用するための基本規範を示すものである。
+          本資料は、魔導車、馬車、騎獣、飛竜、箒、ゴーレム運搬車その他の交通主体が同一の道路を利用するための基本規範を示すものである。
           運転者は、条文を暗記するだけでなく、その背後にある王国社会の慣習、種族差、魔法利用、召喚契約上の責任を理解しなければならない。
         </p>
         <dl class="document-meta">
           <div>
             <dt>文書番号</dt>
-            <dd>交道教第327-1号</dd>
+            <dd>交道免第327-1号</dd>
           </div>
           <div>
             <dt>所管</dt>
@@ -46,44 +51,55 @@
           </div>
           <div>
             <dt>版</dt>
-            <dd>王国歴327年 初版</dd>
+            <dd>王国歴327年 公開版</dd>
           </div>
         </dl>
         <div class="hero-actions">
-          <a class="button primary" href="#chapter-1">本文を読む</a>
+          <a class="button primary" href="#chapter-purpose">本文を読む</a>
           <a class="button secondary" href="#search">条文を検索する</a>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="notice-band" aria-label="教本の基本理念">
+      <section class="notice-band" aria-label="資料の基本理念">
         <p>道路交通法の目的は、交通の安全と円滑を図り、公共の福祉に寄与することである。</p>
       </section>
 
-      <section class="section toc-panel" aria-label="ページ内目次">
+      <section class="section toc-panel" id="toc" aria-label="ページ内目次">
         <p class="section-label">目次</p>
         <div class="toc-links">
-          <a href="#about">教材概要</a>
+          <a href="#about">資料概要</a>
           <a href="#search">条文検索</a>
-          <a href="#chapter-1">第1章 総則</a>
-          <a href="#chapter-2">第2章 運転者および免許</a>
-          <a href="#chapter-3">第3章 通行方法および優先</a>
-          <a href="#chapter-4">第4章 事故および魔物</a>
-          <a href="#chapter-5">第5章 飛行交通および整備</a>
+          <a href="#chapter-purpose">第1章 目的</a>
+          <a href="#chapter-road">第2章 道路</a>
+          <a href="#chapter-vehicle">第3章 車両</a>
+          <a href="#chapter-license">第4章 運転者と免許</a>
+          <a href="#chapter-priority">第5章 優先通行</a>
+          <a href="#chapter-signal">第6章 信号</a>
+          <a href="#chapter-sign">第7章 標識</a>
+          <a href="#chapter-magic">第8章 魔法</a>
+          <a href="#chapter-species">第9章 種族</a>
+          <a href="#chapter-monster">第10章 魔物と積荷</a>
+          <a href="#chapter-accident">第11章 事故</a>
+          <a href="#chapter-flight">第12章 飛行交通</a>
+          <a href="#chapter-maintenance">第13章 整備</a>
+          <a href="#monster-part">第二編 魔物等の交通主体</a>
+          <a href="#monster-tattaratan">第10章 タッタラタン</a>
+          <a href="#monster-accident">第11章 事故発生時の対応</a>
         </div>
       </section>
 
       <section class="section intro" id="about">
-        <p class="section-label">教材概要</p>
+        <p class="section-label">資料概要</p>
         <h2>法律を読むことで異世界を知る。</h2>
         <p>
           オマドリア王国の交通法は、現実の交通法と同じく安全と円滑を基礎にしている。
-          ただし、王国では魔法、種族、魔物、召喚獣、飛行交通が日常の制度に含まれるため、教本には多くの例外と補足が置かれている。
+          ただし、王国では魔法、種族、魔物、召喚獣、飛行交通が日常の制度に含まれるため、道路交通法には多くの例外と補足が置かれている。
         </p>
         <p>
           免許取得者は、車両を操作する者であると同時に、多種族国家の公共空間へ参加する者である。
-          したがって本教本は、運転技術だけでなく、王国で暮らす者への予見義務と配慮義務を学ぶ資料でもある。
+          したがって本資料は、運転技術だけでなく、王国で暮らす者への予見義務と配慮義務を理解するための基礎資料でもある。
         </p>
       </section>
 
@@ -92,7 +108,7 @@
         <h2>調べながら読む</h2>
         <label class="search-box">
           <span>語句を入力</span>
-          <input id="ruleSearch" type="search" placeholder="例: 召喚獣、スライム、飛竜、アンデッド">
+          <input id="ruleSearch" type="search" placeholder="例: 信号、標識、召喚獣、スライム、飛竜、アンデッド">
         </label>
       </section>
 
@@ -100,74 +116,61 @@
         <div class="section-heading">
           <p class="section-label">道路交通法 基本原則</p>
           <h2>第一編 基本通則</h2>
-          <p>初版では、教本と学科問題の土台となる十五条を五章に分けて収録する。</p>
+          <p>本公開版では、運転免許制度を理解するための基礎となる十六条を、探しやすい主題別の章に分けて収録する。</p>
         </div>
 
-        <section class="chapter" id="chapter-1">
+        <section class="chapter" id="chapter-purpose">
           <header class="chapter-heading">
             <span>第1章</span>
-            <h2>総則</h2>
+            <h2>目的</h2>
           </header>
 
           <article class="law-card" data-keywords="目的 安全 円滑 公共 福祉">
             <span class="article-number">第1条</span>
-            <h3>目的</h3>
+            <h3>道路交通法の目的</h3>
             <ul class="article-points">
               <li>この法律は、道路における危険を防止し、交通の安全と円滑を図り、もって公共の福祉に寄与することを目的とする。</li>
               <li>ここにいう危険には、車両等の衝突、転落、魔力漏出、召喚獣の逸走、飛行交通からの落下物、および道路上の魔法事故を含む。</li>
               <li>運転者は、自己の利便のみを優先してはならず、道路を利用する歩行者、騎乗者、飛行者、使役魔物および保護対象魔物の安全を考慮しなければならない。</li>
             </ul>
           </article>
+        </section>
+
+        <section class="chapter" id="chapter-road">
+          <header class="chapter-heading">
+            <span>第2章</span>
+            <h2>道路</h2>
+          </header>
 
           <article class="law-card" data-keywords="道路 街道 橋 地下道 港湾 低空 航路">
             <span class="article-number">第2条</span>
-            <h3>道路の定義</h3>
+            <h3>道路の範囲</h3>
             <ul class="article-points">
               <li>道路とは、王国、領邦、自治都市または村落が公衆の通行に供する地上路、橋梁、地下道、港湾接続路および低空指定航路をいう。</li>
               <li>市場、神殿前広場、駅馬車場、飛竜港の発着路その他不特定多数の者が通行する場所は、管理者の別を問わず道路とみなす。</li>
               <li>私有地内の通路であっても、王国登録車両が反復して出入りし、かつ公衆の通行を制限していない場合は、この法律の適用を受ける。</li>
             </ul>
           </article>
+        </section>
+
+        <section class="chapter" id="chapter-vehicle">
+          <header class="chapter-heading">
+            <span>第3章</span>
+            <h2>車両</h2>
+          </header>
 
           <article class="law-card" data-keywords="車両 魔導車 馬車 騎獣 箒 飛竜 ゴーレム">
             <span class="article-number">第3条</span>
-            <h3>車両等の定義</h3>
+            <h3>車両等の範囲</h3>
             <ul class="article-points">
               <li>車両等とは、魔導車、馬車、荷車、騎獣、箒、飛行具、飛竜、ゴーレム運搬車その他道路を移動する用具または生物をいう。</li>
               <li>自律して移動するゴーレム、命令に従って移動する使役魔物、および召喚契約に基づき牽引を行う召喚獣は、道路上では車両等として扱う。</li>
               <li>ただし、抱きかかえられた小型魔物、籠に収められた妖精、調理済みのスライムその他交通上独立して移動しないものは、積荷として扱う。</li>
             </ul>
           </article>
-        </section>
-
-        <section class="chapter" id="chapter-2">
-          <header class="chapter-heading">
-            <span>第2章</span>
-            <h2>運転者および免許</h2>
-          </header>
-
-          <article class="law-card" data-keywords="運転者 召喚者 管理者 責任">
-            <span class="article-number">第4条</span>
-            <h3>運転者の責任</h3>
-            <ul class="article-points">
-              <li>運転者は、自己の操作、指揮、召喚または命令により移動する車両等の安全について責任を負う。</li>
-              <li>召喚獣による牽引は召喚者の責任とする。召喚者が同乗していない場合であっても、召喚契約を維持する者は運転者とみなす。</li>
-              <li>ゴーレム運搬車の命令者、騎獣の騎乗者、箒の操作者、および馬車の御者は、それぞれ当該車両等の進行、停止、避譲について注意義務を負う。</li>
-            </ul>
-          </article>
-
-          <article class="law-card" data-keywords="免許 普通 特別 飛竜 魔導車 大型">
-            <span class="article-number">第5条</span>
-            <h3>免許区分</h3>
-            <ul class="article-points">
-              <li>魔導車、飛竜、重量ゴーレム運搬車および旅客用大型馬車の運転には、普通免許のほか王令で定める特別免許を要する。</li>
-              <li>普通免許は、市街地および一般街道における小型魔導車、軽馬車、単独騎獣の運転に限り効力を有する。</li>
-              <li>飛竜免許、箒航行免許、重量運搬免許、召喚牽引免許は、それぞれ講習、実地試験、魔力安定検査または契約確認を経て交付される。</li>
-            </ul>
-          </article>
 
           <article class="law-card" data-keywords="登録 鑑札 紋章 標識 魔導車 使役魔物">
-            <span class="article-number">第6条</span>
+            <span class="article-number">第4条</span>
             <h3>車両登録</h3>
             <ul class="article-points">
               <li>魔導機関を備える車両および公道を反復して通行する使役魔物は、交通省登録局の鑑札または紋章標識を掲げなければならない。</li>
@@ -177,10 +180,37 @@
           </article>
         </section>
 
-        <section class="chapter" id="chapter-3">
+        <section class="chapter" id="chapter-license">
           <header class="chapter-heading">
-            <span>第3章</span>
-            <h2>通行方法および優先</h2>
+            <span>第4章</span>
+            <h2>運転者と免許</h2>
+          </header>
+
+          <article class="law-card" data-keywords="運転者 召喚者 管理者 責任">
+            <span class="article-number">第5条</span>
+            <h3>運転者の責任</h3>
+            <ul class="article-points">
+              <li>運転者は、自己の操作、指揮、召喚または命令により移動する車両等の安全について責任を負う。</li>
+              <li>召喚獣による牽引は召喚者の責任とする。召喚者が同乗していない場合であっても、召喚契約を維持する者は運転者とみなす。</li>
+              <li>ゴーレム運搬車の命令者、騎獣の騎乗者、箒の操作者、および馬車の御者は、それぞれ当該車両等の進行、停止、避譲について注意義務を負う。</li>
+            </ul>
+          </article>
+
+          <article class="law-card" data-keywords="免許 普通 特別 飛竜 魔導車 大型">
+            <span class="article-number">第6条</span>
+            <h3>免許区分</h3>
+            <ul class="article-points">
+              <li>魔導車、飛竜、重量ゴーレム運搬車および旅客用大型馬車の運転には、普通免許のほか王令で定める特別免許を要する。</li>
+              <li>普通免許は、市街地および一般街道における小型魔導車、軽馬車、単独騎獣の運転に限り効力を有する。</li>
+              <li>飛竜免許、箒航行免許、重量運搬免許、召喚牽引免許は、それぞれ講習、実地試験、魔力安定検査または契約確認を経て交付される。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="chapter-priority">
+          <header class="chapter-heading">
+            <span>第5章</span>
+            <h2>優先通行</h2>
           </header>
 
           <article class="law-card" data-keywords="緊急 優先 救急 治癒 消防 騎士団">
@@ -192,9 +222,50 @@
               <li>ただし、飛行交通においては急降下による避譲をしてはならない。低空指定航路では、監督官の誘導または空路信号に従い高度を保持して避譲する。</li>
             </ul>
           </article>
+        </section>
 
-          <article class="law-card" data-keywords="魔法 詠唱 浮遊 幻惑 発光 通信">
+        <section class="chapter" id="chapter-signal">
+          <header class="chapter-heading">
+            <span>第6章</span>
+            <h2>信号</h2>
+          </header>
+
+          <article class="law-card" data-keywords="信号 信号灯 地上信号 空路信号 念話 監督官">
             <span class="article-number">第8条</span>
+            <h3>信号の効力</h3>
+            <ul class="article-points">
+              <li>信号灯、空路信号および公認念話信号は、道路交通において同一の効力を有する。</li>
+              <li>飛竜および箒は、地上信号と空路信号の双方に従わなければならない。相互に矛盾する場合は交通監督官の指示に従う。</li>
+              <li>信号が故障し、または念話信号が一部の種族に到達していないおそれがある場合、運転者は徐行し、最寄りの監督官詰所へ届け出ること。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="chapter-sign">
+          <header class="chapter-heading">
+            <span>第7章</span>
+            <h2>標識</h2>
+          </header>
+
+          <article class="law-card" data-keywords="標識 道路標識 浮遊標識 地響き 予兆 登録標識">
+            <span class="article-number">第9条</span>
+            <h3>標識の効力</h3>
+            <ul class="article-points">
+              <li>道路標識、浮遊標識、地響き予兆標および登録紋章標識は、道路の通行方法、危険、登録状態を示す公的表示である。</li>
+              <li>浮遊標識は、低身長の通行者、飛行者および大型車両のいずれからも判読できる高さで管理しなければならない。</li>
+              <li>標識が落下し、汚損し、幻惑魔法その他により判読困難となっている場合、運転者は当該道路を徐行し、道路管理者へ届け出ること。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="chapter-magic">
+          <header class="chapter-heading">
+            <span>第8章</span>
+            <h2>魔法</h2>
+          </header>
+
+          <article class="law-card" data-keywords="魔法 詠唱 浮遊 幻惑 発光 通信 召喚">
+            <span class="article-number">第10条</span>
             <h3>道路上の魔法使用</h3>
             <ul class="article-points">
               <li>運転中の詠唱、幻惑魔法、視界を遮る発光魔法および進路を変化させる浮遊魔法は、交通上やむを得ない場合を除き禁止する。</li>
@@ -202,9 +273,16 @@
               <li>召喚魔法は、停車後、道路管理者が指定する召喚区画でのみ使用できる。道路上に召喚門を開いたまま放置してはならない。</li>
             </ul>
           </article>
+        </section>
 
-          <article class="law-card" data-keywords="種族 反応速度 視界 聴覚 日照 夜間 特例">
-            <span class="article-number">第9条</span>
+        <section class="chapter" id="chapter-species">
+          <header class="chapter-heading">
+            <span>第9章</span>
+            <h2>種族</h2>
+          </header>
+
+          <article class="law-card" data-keywords="種族 妖精 ドワーフ エルフ 獣人 アンデッド ゴーレム">
+            <span class="article-number">第11条</span>
             <h3>種族特性への配慮</h3>
             <ul class="article-points">
               <li>運転者は、種族による身長、視界、聴覚、歩行速度、日照耐性および夜間活動性の差異を予見し、安全な間隔を保持しなければならない。</li>
@@ -214,24 +292,14 @@
           </article>
         </section>
 
-        <section class="chapter" id="chapter-4">
+        <section class="chapter" id="chapter-monster">
           <header class="chapter-heading">
-            <span>第4章</span>
-            <h2>事故および魔物</h2>
+            <span>第10章</span>
+            <h2>魔物と積荷</h2>
           </header>
 
-          <article class="law-card" data-keywords="アンデッド 死亡 損壊 事故 登録">
-            <span class="article-number">第10条</span>
-            <h3>死傷事故の扱い</h3>
-            <ul class="article-points">
-              <li>交通事故により生命活動が停止した場合は死亡事故とする。ただし、登録済みアンデッドは死亡事故には該当せず、損壊事故として扱う。</li>
-              <li>登録済みアンデッドが事故により行動不能となったときは、運転者は登録札を確認し、墓務局または当該アンデッドの管理者へ通報しなければならない。</li>
-              <li>未登録アンデッドについては、事故状況に応じて警備隊、墓務局、治癒院のいずれかの指示を受けること。</li>
-            </ul>
-          </article>
-
           <article class="law-card" data-keywords="魔物 野生 家畜 使役 保護 通報">
-            <span class="article-number">第11条</span>
+            <span class="article-number">第12条</span>
             <h3>魔物との接触</h3>
             <ul class="article-points">
               <li>野生魔物との接触時は危険回避を優先し、家畜または使役魔物との接触時は所有者確認を行う。保護対象魔物は王国自然庁へ通報すること。</li>
@@ -241,7 +309,7 @@
           </article>
 
           <article class="law-card" data-keywords="スライム 流動体 積荷 調理済み 漏出">
-            <span class="article-number">第12条</span>
+            <span class="article-number">第13条</span>
             <h3>流動体積荷</h3>
             <ul class="article-points">
               <li>スライムその他流動体の積荷は密閉容器で運搬し、漏出した場合は直ちに道路管理者へ届け出る。ただし調理済みのスライムはこの限りではない。</li>
@@ -251,14 +319,31 @@
           </article>
         </section>
 
-        <section class="chapter" id="chapter-5">
+        <section class="chapter" id="chapter-accident">
           <header class="chapter-heading">
-            <span>第5章</span>
-            <h2>飛行交通および整備</h2>
+            <span>第11章</span>
+            <h2>事故</h2>
+          </header>
+
+          <article class="law-card" data-keywords="アンデッド 死亡 損壊 事故 登録 通報">
+            <span class="article-number">第14条</span>
+            <h3>死傷事故の扱い</h3>
+            <ul class="article-points">
+              <li>交通事故により生命活動が停止した場合は死亡事故とする。ただし、登録済みアンデッドは死亡事故には該当せず、損壊事故として扱う。</li>
+              <li>登録済みアンデッドが事故により行動不能となったときは、運転者は登録札を確認し、墓務局または当該アンデッドの管理者へ通報しなければならない。</li>
+              <li>未登録アンデッドについては、事故状況に応じて警備隊、墓務局、治癒院のいずれかの指示を受けること。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="chapter-flight">
+          <header class="chapter-heading">
+            <span>第12章</span>
+            <h2>飛行交通</h2>
           </header>
 
           <article class="law-card" data-keywords="飛行 低空 飛竜 箒 空路 信号">
-            <span class="article-number">第13条</span>
+            <span class="article-number">第15条</span>
             <h3>飛行交通</h3>
             <ul class="article-points">
               <li>市街地における低空飛行は指定航路に限る。飛竜および箒は、地上信号と空路信号の双方に従わなければならない。</li>
@@ -266,9 +351,16 @@
               <li>飛竜の着陸、箒の急停止、浮遊荷台の降下は、指定発着場所または交通監督官の指示した場所で行うこと。</li>
             </ul>
           </article>
+        </section>
+
+        <section class="chapter" id="chapter-maintenance">
+          <header class="chapter-heading">
+            <span>第13章</span>
+            <h2>整備</h2>
+          </header>
 
           <article class="law-card" data-keywords="整備 魔導核 制動 灯火 魔力漏出 点検">
-            <span class="article-number">第14条</span>
+            <span class="article-number">第16条</span>
             <h3>整備義務</h3>
             <ul class="article-points">
               <li>魔導車の所有者は、制動装置、灯火、魔導核、魔力漏出防止器および逆召喚停止具を定期に点検しなければならない。</li>
@@ -276,26 +368,271 @@
               <li>騎獣および使役魔物については、鞍具、牽引用具、鎮静具、登録標識および体調を確認すること。疲労した騎獣を無理に運転に供してはならない。</li>
             </ul>
           </article>
+        </section>
 
-          <article class="law-card" data-keywords="標識 信号 浮遊標識 予兆 念話 監督官">
-            <span class="article-number">第15条</span>
-            <h3>標識および信号</h3>
+        <div class="section-heading" id="monster-part">
+          <p class="section-label">第二編 魔物等の交通主体</p>
+          <h2>交通主体・魔物取扱仕様</h2>
+          <p>交通法上の区分は、生物学的な種族ではなく、交通における役割によって決定される。同一の存在であっても、状況に応じて運転者、歩行者、同乗者、車両、飛行車両、積荷または荷物として扱う。</p>
+        </div>
+
+        <section class="chapter" id="monster-policy">
+          <header class="chapter-heading">
+            <span>第1章</span>
+            <h2>基本方針</h2>
+          </header>
+
+          <article class="law-card" data-keywords="魔物 交通主体 運転者 歩行者 同乗者 車両 積荷 荷物">
+            <span class="article-number">第1項</span>
+            <h3>交通上の区分</h3>
             <ul class="article-points">
-              <li>道路標識、信号灯、浮遊標識、地響き予兆標および公認念話標識は、同一の効力を有する。相互に矛盾する場合は交通監督官の指示に従う。</li>
-              <li>念話標識は、受信可能な種族または装置に対してのみ補助的に用いるものとし、通常の視覚標識を省略する理由としてはならない。</li>
-              <li>信号が故障し、浮遊標識が落下し、または地響き予兆標が誤作動している場合、運転者は徐行し、最寄りの監督官詰所へ届け出ること。</li>
+              <li>オマドリア王国では、人間、亜人、魔物、使役生物、魔法生物および飛行生物が同一の交通網を利用する。</li>
+              <li>交通法上の区分は、生物学的な種族ではなく、交通における役割によって決定される。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-slime">
+          <header class="chapter-heading">
+            <span>第2章</span>
+            <h2>スライム</h2>
+          </header>
+
+          <article class="law-card" data-keywords="スライム 生体 積荷 荷物 調理済み 酸性 毒性">
+            <span class="article-number">第1項</span>
+            <h3>基本区分および運搬規則</h3>
+            <ul class="article-points">
+              <li>生体のスライムは、原則として積荷として扱う。調理済みのスライムは、自律性および生命反応を失っているため、通常の荷物として扱う。</li>
+              <li>生体スライムは、流動、漏出、温度による膨張または収縮、衝撃による分裂、他の液体との混合、魔力吸収による性質変化を生じることがあるため、密閉容器に収め、換気孔、逃走防止封印および所有者標識を備えて運搬しなければならない。</li>
+              <li>酸性スライム、毒性スライムその他道路または人体を損傷するおそれのある個体は、危険積荷として扱う。</li>
+              <li>調理済みであると申告されたスライムが自力で容器から出た場合は、その時点から生体積荷として扱う。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-goblin">
+          <header class="chapter-heading">
+            <span>第3章</span>
+            <h2>ゴブリン</h2>
+          </header>
+
+          <article class="law-card" data-keywords="ゴブリン 運転者 同乗者 歩行者 捕虜 積荷 標識">
+            <span class="article-number">第1項</span>
+            <h3>基本区分および識別</h3>
+            <ul class="article-points">
+              <li>ゴブリンは、状況に応じて運転者、同乗者、歩行者、または捕虜もしくは敵対個体としての積荷となる。</li>
+              <li>王国に登録され、運転免許を取得したゴブリンは、通常の運転者となる。捕縛された敵対ゴブリンは、生体積荷として扱う。</li>
+              <li>輸送中に敵対状態が解除された場合であっても、安全な停車場所へ到達するまでは積荷としての固定を解除してはならない。</li>
+              <li>ゴブリンである運転者は、道路上において他のすべての車両等に進路を譲らなければならない。</li>
+              <li>ゴブリン運転者の車両は、ゴブリンマークの提示を義務とする。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-mimic">
+          <header class="chapter-heading">
+            <span>第4章</span>
+            <h2>ミミック</h2>
+          </header>
+
+          <article class="law-card" data-keywords="ミミック 積荷 宝箱 木箱 樽 鞄 擬態 監視">
+            <span class="article-number">第1項</span>
+            <h3>擬態する積荷</h3>
+            <ul class="article-points">
+              <li>輸送中のミミックは、原則として積荷として扱う。知性、発声能力または契約能力を有する場合であっても、容器に擬態して輸送されている間は積荷となる。</li>
+              <li>ミミックは、宝箱、木箱、樽、旅行鞄、荷台、車両備え付けの収納箱または他の積荷に擬態することがある。</li>
+              <li>ミミックを積載する場合、その外面に生体積荷標識を掲示しなければならない。</li>
+              <li>荷下ろしの際、ミミックの所在を確認できない場合は、他の容器を開封してはならない。</li>
+              <li>輸送中のミミックに積荷の監視を命じてはならない。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-golem">
+          <header class="chapter-heading">
+            <span>第5章</span>
+            <h2>ゴーレム</h2>
+          </header>
+
+          <article class="law-card" data-keywords="ゴーレム 運転者 車両 運搬機械 速度 命令">
+            <span class="article-number">第1項</span>
+            <h3>運転者となるゴーレム</h3>
+            <ul class="article-points">
+              <li>ゴーレムは、命令理解能力および操作能力を有する場合、運転者となることができる。</li>
+              <li>自ら荷物を運ぶ場合は、車両または運搬機械として扱う。</li>
+              <li>ゴーレムが運転者である場合、当該道路の制限速度から毎時20キロメートルを減じた速度を上限とする。</li>
+              <li>ゴーレム運転者に対し、走行中に新たな優先命令を与えてはならない。</li>
+              <li>行き先を変更する場合は、安全な場所に停車させた後、従前の目的地命令を解除してから新たな目的地を命じなければならない。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-hippogriff">
+          <header class="chapter-heading">
+            <span>第6章</span>
+            <h2>ヒッポグリフ</h2>
+          </header>
+
+          <article class="law-card" data-keywords="ヒッポグリフ 運転者 騎獣 地上車両 飛行車両 離陸">
+            <span class="article-number">第1項</span>
+            <h3>地上交通と飛行交通の切替え</h3>
+            <ul class="article-points">
+              <li>ヒッポグリフは、運転者、騎獣、地上車両または飛行車両のいずれにもなり得る。</li>
+              <li>自ら進路を判断して移動する場合、ヒッポグリフ自身が運転者を兼ねる。騎乗者が進路を指示する場合、騎乗者が運転者となる。</li>
+              <li>ヒッポグリフは、指定離陸区画以外で地上交通から飛行交通へ移行してはならない。</li>
+              <li>ヒッポグリフの後方を通行する場合は、尾部および後脚から十分な距離を取らなければならない。</li>
+              <li>羽毛が大量に抜け落ちている個体は、飛行車両として使用してはならない。</li>
+              <li>ヒッポグリフが事故を起こした場合、その程度の大きさに関わらず、首を切り落とすこと。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-minotaur">
+          <header class="chapter-heading">
+            <span>第7章</span>
+            <h2>ミノタウロス</h2>
+          </header>
+
+          <article class="law-card" data-keywords="ミノタウロス 運転者 牽引車両 角 突進 狭路">
+            <span class="article-number">第1項</span>
+            <h3>牽引および車体構造</h3>
+            <ul class="article-points">
+              <li>ミノタウロスは運転者となることができる。また、荷車または車両を牽引する場合、自身が牽引車両として扱われる。</li>
+              <li>ミノタウロスが運転席に着く場合、角が車体外へ突出しない構造としなければならない。</li>
+              <li>ミノタウロスが車両を牽引する場合、急な赤色布の掲示、闘技用警笛その他突進を誘発する表示を進行方向に置いてはならない。</li>
+              <li>幅員の狭い道路では、ミノタウロスに方向転換を命じる前に、切り返しに必要な空間を確保しなければならない。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-centaur">
+          <header class="chapter-heading">
+            <span>第8章</span>
+            <h2>ケンタウロス</h2>
+          </header>
+
+          <article class="law-card" data-keywords="ケンタウロス 歩行者 運転者 車両 牽引 騎乗者">
+            <span class="article-number">第1項</span>
+            <h3>車両兼運転者</h3>
+            <ul class="article-points">
+              <li>ケンタウロスは、状況に応じて歩行者、運転者、車両、牽引車両または騎乗用車両となる。</li>
+              <li>自ら走行するケンタウロスは、原則として車両兼運転者として扱う。</li>
+              <li>ケンタウロスの背に他者が乗っている場合、進路決定権を持つ者が運転者となる。</li>
+              <li>ケンタウロスは、道路上で急停止する場合、後脚による合図を行ってはならない。</li>
+              <li>ケンタウロスが車両を牽引する場合、上半身で別の車両を操作してはならない。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-griffon">
+          <header class="chapter-heading">
+            <span>第9章</span>
+            <h2>グリフォン</h2>
+          </header>
+
+          <article class="law-card" data-keywords="グリフォン 飛行車両 騎乗者 積荷 爪 生肉 妖精">
+            <span class="article-number">第1項</span>
+            <h3>飛行車両としての取扱い</h3>
+            <ul class="article-points">
+              <li>グリフォンは、主として飛行車両として扱う。自ら飛行経路を判断する場合は、運転者を兼ねる。</li>
+              <li>騎乗者が飛行経路を指示する場合、騎乗者が運転者となる。</li>
+              <li>グリフォンが積荷を爪で保持して飛行する場合、積荷を二重に固定しなければならない。</li>
+              <li>市街地上空において、グリフォンへ生肉を見せて進路を変更させてはならない。</li>
+              <li>妖精、小型獣人その他グリフォンが獲物と誤認するおそれのある者は、グリフォン発着場を横断してはならない。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-tattaratan">
+          <header class="chapter-heading">
+            <span>第10章</span>
+            <h2>タッタラタン</h2>
+          </header>
+
+          <article class="law-card" data-keywords="タッタラタン 一つ目 花 運転者 同乗者 歩行者">
+            <span class="article-number">第1項</span>
+            <h3>基本区分</h3>
+            <ul class="article-points">
+              <li>タッタラタンは人格を有し、運転者、同乗者、歩行者または事故救助者となり得る。</li>
+              <li>タッタラタンを積荷として扱ってはならない。</li>
+              <li>タッタラタンによって起きたあらゆる事故は、これを事故として扱わず、あらゆる記録にも残らない。</li>
+            </ul>
+          </article>
+
+          <article class="law-card" data-keywords="タッタラタン 青い花 警音器 赤い花 無音 白い花 道路 黄色い花 横断 紫の花 信号">
+            <span class="article-number">第2項</span>
+            <h3>運転中にタッタラタンと遭遇した場合の対応</h3>
+            <ul class="article-points">
+              <li>青い花を所持するタッタラタンと目が合った場合、運転者は警音器を短く3回鳴らさなければならない。警音器を鳴らした後は、タッタラタンが花を一度下げるまで発進してはならない。</li>
+              <li>青い花に反応がない場合は、警音器を繰り返してはならない。</li>
+              <li>赤い花を所持するタッタラタンの側方を通過する場合、警音器を使用してはならない。運転者および同乗者は、窓を閉じ、発声せず、その左側を徐行して通過しなければならない。</li>
+              <li>赤い花が運転者の方を向いた場合は、停止せず通過する。</li>
+              <li>白い花を所持するタッタラタンを道路上に認めた場合、当該道路へ新たに進入してはならない。既に当該道路を走行している場合は、最後に話したい相手にすぐに連絡を行うこと。</li>
+              <li>黄色い花を所持するタッタラタンが道路脇にいる場合、運転者は横断歩道の有無にかかわらず一時停止しなければならない。タッタラタンが花を左右に振った場合は、横断を開始するまで待機する。</li>
+              <li>黄色い花について、花のみが道路を横断した場合も、タッタラタン本人が横断したものとして扱う。</li>
+              <li>紫の花を所持するタッタラタンが交差点内にいる場合、信号灯の色ではなくタッタラタンのあらゆる指示に従わなければならない。</li>
+              <li>紫の花を所持するタッタラタンが交差点内で増えた場合、最初からいた個体だけを基準にする。</li>
+              <li>タッタラタンが花を所持していない場合、運転者は直ちに警告灯を点灯し、後続車両へ異常を知らせた上で車両を停止しなければならない。停止後16分間以上、運転者および同乗者は目を閉じて待機すること。</li>
+              <li>花を所持していないタッタラタンの近くで待機中に歌声が聞こえた場合は、目を閉じたまま発進し、歌声が聞こえなくなるまでアクセルを踏み続けなければならない。</li>
+            </ul>
+          </article>
+
+          <article class="law-card" data-keywords="タッタラタン 運転者 点眼 目薬 近視 補助器具 後続車両">
+            <span class="article-number">第3項</span>
+            <h3>タッタラタンが運転者である場合</h3>
+            <ul class="article-points">
+              <li>タッタラタンが運転を行う場合、運転開始前および運転開始後5分ごとに、公認の目薬を使用しなければならない。</li>
+              <li>点眼中は一時的に前方視認が困難となるため、点眼前に減速しなければならない。</li>
+              <li>近視のタッタラタンは、補助器具または補助魔法を使用せずに運転してはならない。幻視、遠見または未来視は視力補助魔法として認められない。</li>
+              <li>タッタラタンが運転する車両の後方を走行する場合、通常の2倍以上の車間距離を確保しなければならない。</li>
+              <li>後写鏡に映るタッタラタンの眼を直視してはならない。</li>
+              <li>タッタラタンの花が車外から確認できなくなった場合は追尾を中止し、最初の交差点で別の道路へ進行しなければならない。</li>
+            </ul>
+          </article>
+
+          <article class="law-card" data-keywords="タッタラタン 同乗者 遮眼板 視線 ハンカチ 降車">
+            <span class="article-number">第4項</span>
+            <h3>同乗者である場合</h3>
+            <ul class="article-points">
+              <li>タッタラタンは運送上、積荷として扱ってはならず、常に同乗者として取り扱う。</li>
+              <li>運転中、運転者は同乗するタッタラタンと絶対に目を合わせてはならない。禁止される方法には、直接の視認、後写鏡、側面鏡、窓面への反射、水面への反射、魔法映像および他者の眼を介した視認を含む。</li>
+              <li>タッタラタンを同乗させる車両は、運転席と同乗席との間に遮眼板を備えなければならない。</li>
+              <li>遮眼板の向こう側から花を差し出された場合、運転者はこれを受け取ってはならない。</li>
+              <li>同乗者であるタッタラタンが泣いている場合、運転者は清潔なハンカチを一枚、遮眼板下部の受渡口から差し入れなければならない。</li>
+              <li>タッタラタンがハンカチを返却した場合は、運転中にその枚数、湿り気または付着物を確認してはならない。</li>
+              <li>タッタラタンが降車時に花を一度振った場合、運転者は警音器を一回だけ短く鳴らして応答してよい。</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="chapter" id="monster-accident">
+          <header class="chapter-heading">
+            <span>第11章</span>
+            <h2>事故発生時の対応</h2>
+          </header>
+
+          <article class="law-card" data-keywords="事故 タッタラタン 救助 因果 書き換え 通報 警察 交通省因果事故課">
+            <span class="article-number">第1項</span>
+            <h3>タッタラタンによる救助および通報</h3>
+            <ul class="article-points">
+              <li>交通事故が発生した場合、事故現場付近にタッタラタンがいるときは、運転者その他の関係者は、可能な限り当該タッタラタンに救助を要請しなければならない。</li>
+              <li>タッタラタンは、魔法により事故の因果を書き換えることができる。書き換えに成功した場合、負傷、死亡、車両の損壊、道路設備の損壊、事故発生の事実、事故に至った進路、当事者の位置、同乗者または積荷の構成が消滅または変更されることがある。</li>
+              <li>タッタラタンの魔法により事故の因果が書き換えられ、事故による死傷、損壊および道路上の危険が消滅した場合、警察へ通報しなくてよい。</li>
+              <li>事故の記憶だけが残る者がいる場合は、因果書き換え後も通報しなければならない。</li>
+              <li>事故前に存在しなかった同乗者、積荷または道路標識がある場合は、因果書き換え後も通報しなければならない。</li>
+              <li>人数または物品数が一致しない場合、運転者が事故前と異なる場合、またはタッタラタン自身が事故発生を主張している場合は、因果書き換え後も通報しなければならない。</li>
+              <li>前号の通報先は、警察および交通省因果事故課とする。</li>
             </ul>
           </article>
         </section>
 
         <p class="empty-state" id="emptyState" hidden>該当する条文は見つかりませんでした。</p>
       </section>
-
     </main>
 
     <footer class="site-footer">
-      <p>王国歴327年版 / オマドリア王国交通省監修</p>
-      <p>本教材は免許学科試験、交通監督官講習および召喚者責任講習の基礎資料として使用できる。</p>
+      <p>王国歴327年公開版 / オマドリア王国交通省道路交通局</p>
+      <p>本資料は運転免許制度、交通監督官事務および召喚者責任制度の基礎情報として公開する。</p>
     </footer>
 
     <script src="script.js"></script>
